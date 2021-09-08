@@ -8,11 +8,15 @@
     <h1>✨ Self Care Center ✨</h1>
     <br>
     <p> Which type of message?</p>
-    <section>
-      <input type="radio"> <i>affirmation</i> <input type="radio"> <i>mantra</i> <br></br>
-      <button>Receive Message</button>
+    <section class="parent">
+      <ul>
+        <li><input type="radio" name="message-type" id="affirmation"> <i>affirmation</i> 
+          <input type="radio" name="message-type" id="mantra"> <i>mantra</i></ul><br>
+      <div>
+        <button id="receive-message">Receive Message</button>
+      </div>
     </section>
-    <section>
+    <section id='message-output'>
       <img src="./assets/meditate.svg">
     </section>
     <script type="text/javascript" src="main.js"></script>

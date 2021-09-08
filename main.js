@@ -31,3 +31,30 @@ var mantras = [
   'Onward and upward.',
   'I am the sky, the rest is weather.'
 ]
+
+// Query selectors
+
+var receiveButton = document.querySelector('#receive-message');
+var messageOutput = document.querySelector('#message-output');
+var affirmationButton = document.querySelector('#affirmation');
+var mantraButton = document.querySelector('#mantra');
+
+// Event listeners
+
+receiveButton.addEventListener('click', showRandomMessage)
+
+// Event handlers
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+function showRandomMessage(){
+  if (affirmationButton.checked){
+    messageOutput.innerHTML = affirmations[getRandomIndex(affirmations)];
+  } else if (mantraButton.checked){
+    messageOutput.innerHTML = mantras[getRandomIndex(mantras)];
+  } else {
+    messageOutput.innerHTML = '<p>Please select a message type!</p>' 
+  }
+}

@@ -28,6 +28,10 @@ section {
   justify-content: center;
 }
 
+li {
+  list-style-type: none;
+}
+
 img {
   height: 100px;
 }
