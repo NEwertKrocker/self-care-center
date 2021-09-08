@@ -1,8 +1,40 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: Quicksand;
+  color: white;
+  background-color: #134d71;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+section {
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 100px;
+}
 /* font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
