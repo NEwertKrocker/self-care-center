@@ -37,16 +37,20 @@ ul {
 
 button {
   color: white;
+  font-family: inherit;
+  font-size: 16px;
   background-color: #134d71;
+  border-radius: 20px;
   height: 40px;
+  width: 200px;
   margin: auto;
   display: flex;
-  justify-content: center;
-  align-self: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #button-box {
-  margin: 30px;
+  margin: 30px 120px;
   padding: 20px;
 }
 
