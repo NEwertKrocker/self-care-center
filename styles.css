@@ -13,10 +13,11 @@ p {
 body {
   font-family: Quicksand;
   color: white;
-  background-color: #134d71;
+  background-image: linear-gradient(#134d71, #f7e4bf);
+  height: 100vh;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 section {
@@ -25,11 +26,32 @@ section {
   color: black;
   padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-li {
+ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: white;
+  background-color: #134d71;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#button-box {
+  margin: 30px;
+  padding: 20px;
+}
+
+#message-output {
+  margin: 40px;
 }
 
 img {
