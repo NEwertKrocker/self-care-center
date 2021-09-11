@@ -84,11 +84,13 @@ function showAddMessageForm(){
 
 function submitNewMessage(){
   if (newAffirmationButton.checked){
-    affirmations.push(newMessageField.value);
-    messageOutput.innerHTML = affirmations[0];
+    affirmations.unshift(newMessageField.value);
+    displayedMessage.innerHTML = affirmations[0];
+    displayMessage();
   } else if (newMantraButton.checked){
-    mantras.push(newMessageField.value);
-    messageOutput.innerHTML = mantras[0];
+    mantras.unshift(newMessageField.value);
+    displayedMessage.innerHTML = mantras[0];
+    displayMessage();
   } else {
     newMessageField.placeholder = 'Please select a message type!'
   }
