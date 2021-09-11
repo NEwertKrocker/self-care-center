@@ -6,20 +6,27 @@
   </head>
   <body>
     <h1>✨ Self Care Center ✨</h1>
-    <br>
     <p> Which type of message?</p>
     <section id="button-box">
       <article>
         <ul>
           <li><input type="radio" name="message-type" id="affirmation"> <i>affirmation</i>
-          <input type="radio" name="message-type" id="mantra"> <i>mantra</i>
+          <li><input type="radio" name="message-type" id="mantra"> <i>mantra</i>
           </ul>
-          <br>
         <button id="receive-message">Receive Message</button>
     </section>
     <section id='message-output'>
-      <img src="./assets/meditate.svg">
+      <article class="hidden" id='displayed-message'></article>
+      <img src="./assets/meditate.svg" class=""id="placeholder-icon">
+      <article class="hidden" id="new-message-form">
+        <input type="text" placeholder="Make it affirming!" id="new-message-field"></input>
+        <ul>
+          <li><input type="radio" name="message-type" id="new-affirmation"> <i>affirmation</i>
+          <li><input type="radio" name="message-type" id="new-mantra"> <i>mantra</i>
+          </ul>
+        <button id="submit-message">Submit</button>
     </section>
+    <button id='add-message'>Add Message</button>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
