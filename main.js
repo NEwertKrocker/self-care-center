@@ -38,10 +38,20 @@ var receiveButton = document.querySelector('#receive-message');
 var messageOutput = document.querySelector('#message-output');
 var affirmationButton = document.querySelector('#affirmation');
 var mantraButton = document.querySelector('#mantra');
+var addMessageButton = document.querySelector('#add-message');
+var placeholderIcon = document.querySelector('#placeholder-icon');
+var newMessageForm = document.querySelector('#new-message-form');
+var newAffirmationButton = document.querySelector('#new-affirmation');
+var newMantraButton = document.querySelector('#new-mantra');
+var submitMessageButton = document.querySelector('#submit-message');
+var newMessageField = document.querySelector('#new-message-field');
+var displayedMessage = document.querySelector('#displayed-message');
 
 // Event listeners
 
 receiveButton.addEventListener('click', showRandomMessage)
+addMessageButton.addEventListener('click', showAddMessageForm)
+submitMessageButton.addEventListener('click', submitNewMessage)
 
 // Event handlers
 
@@ -50,11 +60,38 @@ function getRandomIndex(array) {
 }
 
 function showRandomMessage(){
+  displayMessage();
   if (affirmationButton.checked){
-    messageOutput.innerHTML = affirmations[getRandomIndex(affirmations)];
+    displayedMessage.innerHTML = affirmations[getRandomIndex(affirmations)];
   } else if (mantraButton.checked){
-    messageOutput.innerHTML = mantras[getRandomIndex(mantras)];
+    displayedMessage.innerHTML = mantras[getRandomIndex(mantras)];
   } else {
-    messageOutput.innerHTML = '<p>Please select a message type!</p>' 
+    displayedMessage.innerHTML = '<p>Please select a message type!</p>'
+  }
+}
+
+function displayMessage(){
+  placeholderIcon.classList.add("hidden");
+  newMessageForm.classList.add("hidden");
+  displayedMessage.classList.remove("hidden");
+}
+
+function showAddMessageForm(){
+  displayedMessage.classList.add("hidden");
+  newMessageForm.classList.remove("hidden");
+  placeholderIcon.classList.add("hidden");
+}
+
+function submitNewMessage(){
+  if (newAffirmationButton.checked){
+    affirmations.unshift(newMessageField.value);
+    displayedMessage.innerHTML = affirmations[0];
+    displayMessage();
+  } else if (newMantraButton.checked){
+    mantras.unshift(newMessageField.value);
+    displayedMessage.innerHTML = mantras[0];
+    displayMessage();
+  } else {
+    newMessageField.placeholder = 'Please select a message type!'
   }
 }
