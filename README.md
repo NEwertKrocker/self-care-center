@@ -1,24 +1,34 @@
-# Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
+# SELF-CARE CENTER
+Mod 1 solo project
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Table of Contents
+  - [Abstract](#abstract)
+  - [Technologies](#technologies)
+  - [Code Architecture](#code-architecture)
+  - [Contributors](#contributors)
+	- [Wins](#wins)
+	- [Challenges + Improvements](#challenges-+-Improvements)
+  - [Project Specs](#project-specs)
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+## Abstract
+This project was an opportunity to practice writing HTML, CSS, and Javascript mostly from scratch, trying to match the provided comp and deliver requested functionality. It was a great chance to try integrating all three and making them mesh together. The result is a webpage that spits out affirmations or mantras, and allows the user to add new sayings to the array of randomly-selected offerings.
 
-## Learning Goals
+## Technologies
+- Javascript / CSS / HTML
+- node
+- Atom
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+## Code Architecture
+- JS / CSS / HTML
 
-## Setup
+## Contributors
+- [Nate Ewert-Krocker](https://github.com/NEwertKrocker)
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+## Wins
+- This was great practice in working with JavaScript event listeners and handlers, and it was fun playing around with CSS to see how flexible it is!
 
+## Challenges + Improvements
+- CSS is also very finicky! It's easy to get things working for one setup, only to have to reconfigure it when a new feature is introduced.
+
+## Project Specs
+- Project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html)
